@@ -1,0 +1,71 @@
+server:
+  port: 9099
+spring:
+  datasource:
+    dynamic:
+      primary: default
+      strict: false
+      datasource:
+        default:
+          url: jdbc:mysql://localhost:3306/blog_web?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&allowPublicKeyRetrieval=true
+          username: root
+          password: 191219
+          driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      web-stat-filter:
+        enabled: true
+        profile-enable: true
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+      stat-view-servlet:
+        enabled: true
+        allow:
+        deny:
+        url-pattern: /druid/*
+        login-password: twbat_ltl_lxf_baby5210
+        login-username: druid_twbat_lx_lt_lf_5210
+        reset-enable: true
+      filter:
+        stat:
+          enabled: true
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: true
+        wall:
+          config:
+            multi-statement-allow: true
+    type: com.alibaba.druid.pool.DruidDataSource
+  autoconfigure:
+    exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+  profiles:
+    active: dev
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    cache: false
+    check-template-location: true
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.twbat.blog.system.business.domain
+  check-config-location: true
+  configuration:
+    cache-enabled: true
+    map-underscore-to-camel-case: true
+
+setting-url: 127.0.0.1:9001
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

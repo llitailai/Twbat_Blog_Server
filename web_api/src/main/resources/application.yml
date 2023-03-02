@@ -1,0 +1,30 @@
+server:
+  port: 9098
+spring:
+  profiles:
+    active: dev
+
+  mail:
+    host: smtp.163.com
+    password: ZJHLBXHNHITCHUAG
+    username: twbat_lee@163.com
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+          debug: true
+
+  application:
+    name: blog-web
+logging:
+  file:
+    path: /log/web
+
+blog.secret: awascdfmblsJsdmMWjNSFxsflGsdmKDFHsdnJNFSL
+blog.out.day: 7
+blog.extend.expiration: 5

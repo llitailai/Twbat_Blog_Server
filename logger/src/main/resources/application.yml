@@ -1,0 +1,9 @@
+logging:
+  config: log4j2.xml
+  level: debug
+  file:
+    path: /log
+
+spring:
+  application:
+    name: _logger
