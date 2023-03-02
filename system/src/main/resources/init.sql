@@ -310,5 +310,5 @@ CREATE TABLE article_tag
     tag_id         bigint   not null comment '标签ID',
     create_time    datetime not null comment '创建时间',
     update_time    datetime comment '修改时间'
-) comment '文章与标签关联关系表'; 
+) comment '文章与标签关联关系表';
 
