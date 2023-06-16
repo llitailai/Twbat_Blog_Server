@@ -42,4 +42,9 @@ public class LoginPasswordEncryptSetting {
     public static String getPrivateKey() {
         return KEYS.get(RsaUtil.RSA_PRIVATE_KEY_STR);
     }
+
+    public static void main(String[] args) {
+        System.out.println(getPrivateKey());
+        System.out.println(getPublicKey());
+    }
 }

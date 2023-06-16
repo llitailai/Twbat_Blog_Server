@@ -1,0 +1,6 @@
+2023-06-16 21:15:26.683 [33mWARN [m [main] [33mo.t.t.TemplateMode.parse(150)[m: [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-06-16 21:15:27.271 [33mWARN [m [main] [33mc.n.c.s.URLConfigurationSource.<init>(121)[m: No URLs will be polled as dynamic configuration sources.
+2023-06-16 21:15:27.275 [33mWARN [m [main] [33mc.n.c.s.URLConfigurationSource.<init>(121)[m: No URLs will be polled as dynamic configuration sources.
+2023-06-16 21:17:35.353 [33mWARN [m [main] [33mo.t.t.TemplateMode.parse(150)[m: [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-06-16 21:17:36.051 [33mWARN [m [main] [33mc.n.c.s.URLConfigurationSource.<init>(121)[m: No URLs will be polled as dynamic configuration sources.
+2023-06-16 21:17:36.055 [33mWARN [m [main] [33mc.n.c.s.URLConfigurationSource.<init>(121)[m: No URLs will be polled as dynamic configuration sources.

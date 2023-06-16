@@ -10,8 +10,8 @@
         <property name="LOG_PATTERN"
                   value="%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight{%-5level} [%t] %highlight{%c{1.}.%M(%L)}: %msg%n"/>
         <!-- 定义日志存储的路径 -->
-        <property name="FILE_PATH" value="/log/system"/>
-        <property name="FILE_NAME" value="log-system"/>
+<!--        <property name="FILE_PATH" value="/log/system"/>-->
+<!--        <property name="FILE_NAME" value="log-system"/>-->
     </Properties>
 
     <appenders>
